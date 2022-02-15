@@ -6,28 +6,29 @@ const Pais    =   mongoose.model('Pais',{
         type: String,
         required: true
     },
-
-    cpf:{
-        type: String,
-        required: true,
-        maxLength:11,
-        minLength:11
-    },
-
+  
     end_id:{
         type:mongoose.Types.ObjectId,
         required: true,
         ref:'Endereco'
     },
 
-    email:{
+    matricula:{
         type: String,
         required: true
     },
 
-    senha:{
+    turno:{
         type: String,
-        required: true
+        required: true,
+        enum: ['Vespertino','Matutino','Noturno'],
+        default: 'Matutino'
+    },
+
+    telefone_id:{
+        type:mongoose.Types.ObjectId,
+        required: true,
+        ref:'Telefone'
     },
 
     escola_id:{
@@ -35,6 +36,11 @@ const Pais    =   mongoose.model('Pais',{
         required: true,
         ref:'Escola'
     },
+    pais_id:{
+        type:mongoose.Types.ObjectId,
+        required: true,
+        ref:'Pais'
+    }, 
 
 })
 

@@ -14,7 +14,19 @@ const Telefone    =   mongoose.model('Telefone',{
         required: true,
         maxLength:9,
         minLength:9
-    }
+    },
+
+    escola_id:{
+        type:mongoose.Types.ObjectId,
+        required: true,
+        ref:'Escola'
+    },
+
+    pais_id:{
+        type:mongoose.Types.ObjectId,
+        required: true,
+        ref:'Pais'
+    },
 
 })
 
