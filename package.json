@@ -1,0 +1,26 @@
+{
+  "name": "api_escola_na_mao",
+  "version": "1.0.0",
+  "description": "API para o o aplicativo idealizado por min para escolas e pais poderem se comunicar de uma maneira mais facil e direta",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon start ./index.js localhost 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reinaldo-santos-cerqueira/api_escola_na_mao.git"
+  },
+  "author": "Reinaldo Santos <https://www.linkedin.com/in/reinaldo-santos-04855119a/>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Reinaldo-santos-cerqueira/api_escola_na_mao/issues"
+  },
+  "homepage": "https://github.com/Reinaldo-santos-cerqueira/api_escola_na_mao#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "expressa": "^1.2.2",
+    "mongoose": "^6.2.1",
+    "nodemon": "^2.0.15"
+  }
+}
