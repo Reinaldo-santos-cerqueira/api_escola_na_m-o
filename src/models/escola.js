@@ -14,12 +14,6 @@ const Escola    =   mongoose.model('Escola',{
         minLength:14
     },
 
-    end_id:{
-        type:mongoose.Types.ObjectId,
-        required: true,
-        ref:'Endereco'
-    },
-
     email:{
         type: String,
         required: true
@@ -28,12 +22,6 @@ const Escola    =   mongoose.model('Escola',{
     senha:{
         type: String,
         required: true
-    },
-
-    telefone_id:{
-        type:mongoose.Types.ObjectId,
-        required: true,
-        ref:'Telefone'
     },
 
 })

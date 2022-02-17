@@ -35,7 +35,13 @@ const Endereco    =   mongoose.model('Endereco',{
         type:mongoose.Types.ObjectId,
         required: true,
         ref:'Estado'
-    }
+    },
+
+    escola_id:{
+        type:mongoose.Types.ObjectId,
+        required: true,
+        ref:'Escola'
+    },
 
 });
 
